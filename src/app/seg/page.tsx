@@ -98,15 +98,15 @@ export default function SEGPage() {
               </p>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[5px] border-l-4 border-heliaxis-gold">
                   <Sun className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">Encourage small-scale renewable generation</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[5px] border-l-4 border-heliaxis-gold">
                   <Zap className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">Reward export of clean electricity</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[5px] border-l-4 border-heliaxis-gold">
                   <Settings className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">Support flexible, decentralised energy system</span>
                 </div>
@@ -115,7 +115,7 @@ export default function SEGPage() {
             
             <div className="space-y-6">
               {/* Image */}
-              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative">
+              <div className="aspect-[16/9] rounded-[5px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=450&fit=crop"
                   alt="Smart meter displaying energy export data"
@@ -123,7 +123,7 @@ export default function SEGPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="bg-heliaxis-navy rounded-[10px] p-8 text-white">
+              <div className="bg-heliaxis-navy rounded-[5px] p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">How SEG works</h3>
               <p className="text-white/80 mb-6">
                 At its core, SEG is straightforward:
@@ -183,7 +183,7 @@ export default function SEGPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Sun className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Eligible System</CardTitle>
@@ -197,7 +197,7 @@ export default function SEGPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <FileText className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">MCS Certification</CardTitle>
@@ -211,7 +211,7 @@ export default function SEGPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Gauge className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Export Metering</CardTitle>
@@ -225,7 +225,7 @@ export default function SEGPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">SEG Registration</CardTitle>
@@ -239,7 +239,7 @@ export default function SEGPage() {
           </div>
 
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white rounded-[10px] p-6 shadow-lg border-l-4 border-heliaxis-gold">
+            <div className="bg-white rounded-[5px] p-6 shadow-lg border-l-4 border-heliaxis-gold">
               <div className="flex items-start gap-4">
                 <AlertCircle className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
@@ -273,7 +273,7 @@ export default function SEGPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gray-50 rounded-[10px] p-8">
+              <div className="bg-gray-50 rounded-[5px] p-8">
                 <h3 className="text-xl font-bold text-heliaxis-navy mb-6 flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-heliaxis-navy text-white flex items-center justify-center text-sm">
                     FIT
@@ -300,7 +300,7 @@ export default function SEGPage() {
                 </ul>
               </div>
 
-              <div className="bg-heliaxis-gold/10 rounded-[10px] p-8">
+              <div className="bg-heliaxis-gold/10 rounded-[5px] p-8">
                 <h3 className="text-xl font-bold text-heliaxis-navy mb-6 flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-heliaxis-gold text-heliaxis-navy flex items-center justify-center text-sm">
                     SEG
@@ -328,7 +328,7 @@ export default function SEGPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-heliaxis-navy rounded-[10px] p-6 text-white">
+            <div className="mt-8 bg-heliaxis-navy rounded-[5px] p-6 text-white">
               <div className="flex items-start gap-4">
                 <AlertCircle className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
@@ -362,7 +362,7 @@ export default function SEGPage() {
                 but using electricity on site avoids buying electricity at retail rates.
               </p>
               
-              <div className="bg-white/5 rounded-[10px] p-6 border border-white/10">
+              <div className="bg-white/5 rounded-[5px] p-6 border border-white/10">
                 <p className="text-heliaxis-gold font-semibold mb-4">
                   In most cases, using energy on site is more valuable than exporting it.
                 </p>
@@ -377,20 +377,20 @@ export default function SEGPage() {
             <div>
               <Card className="bg-white border-none shadow-xl">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Battery className="w-7 h-7 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-xl text-heliaxis-navy">The Trade-off</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-[10px]">
+                  <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-[5px]">
                     <Zap className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-heliaxis-navy">Exporting electricity</h4>
                       <p className="text-sm text-gray-600">Earns SEG payments (typically lower rate)</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-heliaxis-gold/10 rounded-[10px]">
+                  <div className="flex items-start gap-3 p-4 bg-heliaxis-gold/10 rounded-[5px]">
                     <Battery className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-heliaxis-navy">Using on site</h4>
@@ -418,25 +418,25 @@ export default function SEGPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[10px]">
+              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[5px]">
                 <XCircle className="w-6 h-6 text-red-400 flex-shrink-0" />
                 <span className="text-gray-700">It is not a guaranteed long-term income stream</span>
               </div>
-              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[10px]">
+              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[5px]">
                 <XCircle className="w-6 h-6 text-red-400 flex-shrink-0" />
                 <span className="text-gray-700">It does not replace the Feed-in Tariff</span>
               </div>
-              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[10px]">
+              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[5px]">
                 <XCircle className="w-6 h-6 text-red-400 flex-shrink-0" />
                 <span className="text-gray-700">It does not remove the need for good system design</span>
               </div>
-              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[10px]">
+              <div className="flex items-center gap-4 p-5 bg-gray-50 rounded-[5px]">
                 <XCircle className="w-6 h-6 text-red-400 flex-shrink-0" />
                 <span className="text-gray-700">It does not eliminate the value of battery storage</span>
               </div>
             </div>
 
-            <div className="mt-8 bg-heliaxis-gold/10 rounded-[10px] p-6 border border-heliaxis-gold/20">
+            <div className="mt-8 bg-heliaxis-gold/10 rounded-[5px] p-6 border border-heliaxis-gold/20">
               <div className="flex items-start gap-4">
                 <HelpCircle className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
@@ -504,7 +504,7 @@ export default function SEGPage() {
           </div>
 
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white rounded-[10px] p-8 shadow-lg">
+            <div className="bg-white rounded-[5px] p-8 shadow-lg">
               <h3 className="text-xl font-bold text-heliaxis-navy mb-6 text-center">
                 Heliaxis ensures SEG is considered correctly
               </h3>
@@ -542,7 +542,7 @@ export default function SEGPage() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-1" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do I automatically receive SEG payments with solar panels?
                 </AccordionTrigger>
@@ -553,7 +553,7 @@ export default function SEGPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-2" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do I need a smart meter for SEG?
                 </AccordionTrigger>
@@ -564,7 +564,7 @@ export default function SEGPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-3" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can I receive SEG if I am on the Feed-in Tariff?
                 </AccordionTrigger>
@@ -575,7 +575,7 @@ export default function SEGPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-4" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Is SEG worth it?
                 </AccordionTrigger>
@@ -587,7 +587,7 @@ export default function SEGPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-5" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Does battery storage affect SEG?
                 </AccordionTrigger>

@@ -95,7 +95,7 @@ export default function ConsultationPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Users className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Housing Associations</CardTitle>
@@ -110,7 +110,7 @@ export default function ConsultationPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Building className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Local Authorities</CardTitle>
@@ -125,7 +125,7 @@ export default function ConsultationPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Building2 className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Public Sector Bodies</CardTitle>
@@ -140,7 +140,7 @@ export default function ConsultationPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Layers className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Education Providers</CardTitle>
@@ -155,7 +155,7 @@ export default function ConsultationPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Home className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Commercial Portfolios</CardTitle>
@@ -170,7 +170,7 @@ export default function ConsultationPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Settings className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Asset Managers</CardTitle>
@@ -207,7 +207,7 @@ export default function ConsultationPage() {
             </div>
             
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="bg-white rounded-[10px] p-6 shadow-lg border-l-4 border-red-400">
+              <div className="bg-white rounded-[5px] p-6 shadow-lg border-l-4 border-red-400">
                 <h4 className="font-semibold text-heliaxis-navy mb-3">Risks of moving too quickly:</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
@@ -229,7 +229,7 @@ export default function ConsultationPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-[10px] p-6 shadow-lg border-l-4 border-orange-400">
+              <div className="bg-white rounded-[5px] p-6 shadow-lg border-l-4 border-orange-400">
                 <h4 className="font-semibold text-heliaxis-navy mb-3">Risks of moving too slowly:</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
@@ -270,7 +270,7 @@ export default function ConsultationPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[16/10] rounded-[10px] overflow-hidden relative">
+              <div className="aspect-[16/10] rounded-[5px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop"
                   alt="Team collaboration on decarbonisation strategy"
@@ -288,7 +288,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Search className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Discovery & Data Capture</CardTitle>
@@ -308,7 +308,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <BarChart3 className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Options Appraisal</CardTitle>
@@ -328,7 +328,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Target className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Prioritisation & Phasing</CardTitle>
@@ -348,7 +348,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <PoundSterling className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Funding Alignment</CardTitle>
@@ -368,7 +368,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <FileText className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Procurement-Ready Outputs</CardTitle>
@@ -388,7 +388,7 @@ export default function ConsultationPage() {
               </div>
               <Card className="border-none shadow-lg pt-6">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Rocket className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Delivery Support</CardTitle>
@@ -452,11 +452,11 @@ export default function ConsultationPage() {
               </div>
             </div>
             
-            <div className="bg-white/5 rounded-[10px] p-8 border border-white/10">
+            <div className="bg-white/5 rounded-[5px] p-8 border border-white/10">
               <h4 className="font-semibold text-white mb-6">Key challenges we address:</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[5px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
                     <Home className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -465,7 +465,7 @@ export default function ConsultationPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[5px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
                     <BarChart3 className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -474,7 +474,7 @@ export default function ConsultationPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[5px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
                     <Settings className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -483,7 +483,7 @@ export default function ConsultationPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[5px] bg-heliaxis-gold/20 flex items-center justify-center flex-shrink-0">
                     <Users className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -513,7 +513,7 @@ export default function ConsultationPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-8 rounded-[10px] bg-gray-50">
+            <div className="text-center p-8 rounded-[5px] bg-gray-50">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -523,7 +523,7 @@ export default function ConsultationPage() {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-[10px] bg-gray-50">
+            <div className="text-center p-8 rounded-[5px] bg-gray-50">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <HelpCircle className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -533,7 +533,7 @@ export default function ConsultationPage() {
               </p>
             </div>
 
-            <div className="text-center p-8 rounded-[10px] bg-gray-50">
+            <div className="text-center p-8 rounded-[5px] bg-gray-50">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <Lightbulb className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -561,34 +561,34 @@ export default function ConsultationPage() {
               </p>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <ClipboardList className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Estate or stock-level assessment summaries</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <BarChart3 className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Technology options matrices</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <Target className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Phased decarbonisation roadmaps</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <FileText className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Cost and carbon impact narratives</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <PoundSterling className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Funding-aligned project scopes</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <Rocket className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Implementation-ready recommendations</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-heliaxis-navy rounded-[10px] p-8 text-white">
+            <div className="bg-heliaxis-navy rounded-[5px] p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Why choose Heliaxis for advisory work?</h3>
               <p className="text-white/80 mb-8">
                 Clients choose Heliaxis because our advice is grounded in delivery experience. 
@@ -628,7 +628,7 @@ export default function ConsultationPage() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-1" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you provide advisory services without installation?
                 </AccordionTrigger>
@@ -639,7 +639,7 @@ export default function ConsultationPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-2" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can you support pilot projects?
                 </AccordionTrigger>
@@ -650,7 +650,7 @@ export default function ConsultationPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-3" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you work alongside other consultants or asset managers?
                 </AccordionTrigger>
@@ -661,7 +661,7 @@ export default function ConsultationPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-4" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can you support tenant engagement considerations?
                 </AccordionTrigger>
@@ -672,7 +672,7 @@ export default function ConsultationPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-5" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you provide ongoing advisory support?
                 </AccordionTrigger>

@@ -98,7 +98,7 @@ export default function FundingPage() {
                 be structured to succeed.
               </p>
               {/* Image */}
-              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-8 lg:hidden">
+              <div className="aspect-[16/9] rounded-[5px] overflow-hidden relative mb-8 lg:hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=450&fit=crop"
                   alt="Funding documentation and project planning"
@@ -110,7 +110,7 @@ export default function FundingPage() {
             
             <div className="space-y-6">
               {/* Desktop Image */}
-              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative hidden lg:block">
+              <div className="aspect-[16/9] rounded-[5px] overflow-hidden relative hidden lg:block">
                 <Image
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=450&fit=crop"
                   alt="Funding documentation and project planning"
@@ -118,29 +118,29 @@ export default function FundingPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="bg-gray-50 rounded-[10px] p-8">
+              <div className="bg-gray-50 rounded-[5px] p-8">
               <h4 className="font-semibold text-heliaxis-navy mb-6 flex items-center gap-2">
                 <AlertCircle className="w-5 h-5 text-heliaxis-gold" />
                 Common challenges in funding-led projects:
               </h4>
               <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-start gap-3 p-4 bg-white rounded-[5px] shadow-sm">
                   <ChevronRight className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Vague or overly broad project scopes</span>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-start gap-3 p-4 bg-white rounded-[5px] shadow-sm">
                   <ChevronRight className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Technologies selected without sufficient feasibility assessment</span>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-start gap-3 p-4 bg-white rounded-[5px] shadow-sm">
                   <ChevronRight className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Underestimation of grid, electrical or structural constraints</span>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-start gap-3 p-4 bg-white rounded-[5px] shadow-sm">
                   <ChevronRight className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Insufficient documentation for audit and reporting</span>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-start gap-3 p-4 bg-white rounded-[5px] shadow-sm">
                   <ChevronRight className="w-5 h-5 text-heliaxis-gold mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Delivery timelines misaligned with funding windows</span>
                 </div>
@@ -159,7 +159,7 @@ export default function FundingPage() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <Card className="border-none shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                       <Building2 className="w-6 h-6 text-heliaxis-gold" />
                     </div>
                     <CardTitle className="text-lg text-heliaxis-navy">Public Buildings</CardTitle>
@@ -173,7 +173,7 @@ export default function FundingPage() {
 
                 <Card className="border-none shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                       <Shield className="w-6 h-6 text-heliaxis-gold" />
                     </div>
                     <CardTitle className="text-lg text-heliaxis-navy">Battery Storage</CardTitle>
@@ -187,7 +187,7 @@ export default function FundingPage() {
 
                 <Card className="border-none shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                       <Zap className="w-6 h-6 text-heliaxis-gold" />
                     </div>
                     <CardTitle className="text-lg text-heliaxis-navy">LED Lighting</CardTitle>
@@ -201,7 +201,7 @@ export default function FundingPage() {
 
                 <Card className="border-none shadow-lg">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                       <Users className="w-6 h-6 text-heliaxis-gold" />
                     </div>
                     <CardTitle className="text-lg text-heliaxis-navy">Community Energy</CardTitle>
@@ -284,7 +284,7 @@ export default function FundingPage() {
               </p>
             </div>
             
-            <div className="bg-heliaxis-navy rounded-[10px] p-8 text-white">
+            <div className="bg-heliaxis-navy rounded-[5px] p-8 text-white">
               <h4 className="font-semibold text-heliaxis-gold mb-6">How we support SPF projects:</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -332,7 +332,7 @@ export default function FundingPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/5 rounded-[10px] p-6 border border-white/10">
+            <div className="bg-white/5 rounded-[5px] p-6 border border-white/10">
               <h4 className="font-semibold text-white mb-4">Funding-led challenges:</h4>
               <ul className="space-y-3 text-white/80">
                 <li className="flex items-start gap-2">
@@ -354,7 +354,7 @@ export default function FundingPage() {
               </ul>
             </div>
 
-            <div className="bg-white/5 rounded-[10px] p-6 border border-white/10">
+            <div className="bg-white/5 rounded-[5px] p-6 border border-white/10">
               <h4 className="font-semibold text-white mb-4">How we help:</h4>
               <ul className="space-y-3 text-white/80">
                 <li className="flex items-start gap-2">
@@ -410,7 +410,7 @@ export default function FundingPage() {
                 One of the most common reasons funding-led projects underperform is misalignment 
                 between funding assumptions and technical reality.
               </p>
-              <div className="bg-heliaxis-gold/5 rounded-[10px] p-6 border border-heliaxis-gold/20">
+              <div className="bg-heliaxis-gold/5 rounded-[5px] p-6 border border-heliaxis-gold/20">
                 <h4 className="font-semibold text-heliaxis-navy mb-4">Heliaxis ensures:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-gray-700">
@@ -452,26 +452,26 @@ export default function FundingPage() {
               </p>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <FileText className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Technical specifications</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <ClipboardCheck className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Commissioning evidence</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <Zap className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Energy generation or savings data</span>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-[10px] shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-[5px] shadow-sm">
                   <FileCheck className="w-6 h-6 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Carbon impact reporting</span>
                 </div>
               </div>
             </div>
             
-            <div className="bg-heliaxis-navy rounded-[10px] p-8 text-white">
+            <div className="bg-heliaxis-navy rounded-[5px] p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Feed-in Tariff & SEG</h3>
               <p className="text-white/80 mb-6">
                 Many funded projects involve upgrading or interacting with existing systems, 
@@ -521,7 +521,7 @@ export default function FundingPage() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-1" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can you help at the funding application stage?
                 </AccordionTrigger>
@@ -532,7 +532,7 @@ export default function FundingPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-2" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you support reporting after installation?
                 </AccordionTrigger>
@@ -543,7 +543,7 @@ export default function FundingPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-3" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can funding be combined with private finance?
                 </AccordionTrigger>
@@ -554,7 +554,7 @@ export default function FundingPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-4" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you work with multiple stakeholders?
                 </AccordionTrigger>
@@ -565,7 +565,7 @@ export default function FundingPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="bg-gray-50 rounded-[10px] px-6 border-none">
+              <AccordionItem value="item-5" className="bg-gray-50 rounded-[5px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   What happens if constraints are identified during delivery?
                 </AccordionTrigger>

@@ -56,16 +56,14 @@ export function Navigation() {
       <nav className="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="p-2 rounded-[10px] border-2 border-heliaxis-gold">
-            <Image
-              src="/assets/heliaxis-logo.png"
-              alt="Heliaxis"
-              width={180}
-              height={50}
-              className="h-10 w-auto"
-              priority
-            />
-          </div>
+          <Image
+            src="/assets/heliaxis-logo.png"
+            alt="Heliaxis"
+            width={180}
+            height={50}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
