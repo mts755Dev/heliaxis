@@ -81,7 +81,7 @@ export default function AboutPage() {
             
             <div className="space-y-6">
               {/* Feature Image */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
                   alt="Team discussing renewable energy solutions"
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <div className="grid sm:grid-cols-2 gap-6">
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Shield className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Quality</CardTitle>
@@ -107,7 +107,7 @@ export default function AboutPage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Target className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Transparency</CardTitle>
@@ -121,7 +121,7 @@ export default function AboutPage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Heart className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Long-term Support</CardTitle>
@@ -135,7 +135,7 @@ export default function AboutPage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Lightbulb className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Expertise</CardTitle>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+            <div className="text-center p-8 bg-white rounded-[10px] shadow-lg">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+            <div className="text-center p-8 bg-white rounded-[10px] shadow-lg">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+            <div className="text-center p-8 bg-white rounded-[10px] shadow-lg">
               <div className="w-16 h-16 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-heliaxis-gold" />
               </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-[10px]">
                 <CheckCircle2 className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-heliaxis-navy mb-2">Honest Advice</h3>
@@ -224,7 +224,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-[10px]">
                 <CheckCircle2 className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-heliaxis-navy mb-2">Quality Workmanship</h3>
@@ -235,7 +235,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-[10px]">
                 <CheckCircle2 className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-heliaxis-navy mb-2">Realistic Expectations</h3>
@@ -246,7 +246,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-[10px]">
                 <CheckCircle2 className="w-6 h-6 text-heliaxis-gold flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold text-heliaxis-navy mb-2">Ongoing Support</h3>

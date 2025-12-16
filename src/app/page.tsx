@@ -13,7 +13,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Heliaxis | Renewable Energy Solutions Wales & South West England",
   description:
-    "Energy that revolves around you. Heliaxis delivers renewable energy solutions for homes, businesses, local authorities and public sector organisations across Wales and the South West of England.",
+    "Energy That Revolves Around You. Heliaxis delivers renewable energy solutions for homes, businesses, local authorities and public sector organisations across Wales and the South West of England.",
 };
 
 export default function HomePage() {
@@ -38,7 +38,7 @@ export default function HomePage() {
               Wales & South West England
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-              Energy that revolves{" "}
+              Energy That Revolves{" "}
               <span className="text-heliaxis-gold">around you</span>
           </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
@@ -101,7 +101,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
             <div className="relative order-2 lg:order-1">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop"
                   alt="Solar panels generating clean renewable energy"
@@ -109,7 +109,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 rounded-2xl bg-heliaxis-navy p-4 hidden md:flex flex-col justify-center items-center text-center shadow-xl">
+              <div className="absolute -top-6 -left-6 w-32 h-32 rounded-[10px] bg-heliaxis-navy p-4 hidden md:flex flex-col justify-center items-center text-center shadow-xl">
                 <Sun className="w-8 h-8 text-heliaxis-gold mb-2" />
                 <span className="text-white text-xs font-medium">Clean Energy Solutions</span>
               </div>
@@ -131,7 +131,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <CheckCircle2 className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Understanding First</CardTitle>
@@ -146,7 +146,7 @@ export default function HomePage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Shield className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Quality Design</CardTitle>
@@ -161,7 +161,7 @@ export default function HomePage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Award className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Long-term Value</CardTitle>
@@ -196,7 +196,7 @@ export default function HomePage() {
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Sun className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -206,7 +206,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Battery className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -216,7 +216,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Thermometer className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -226,7 +226,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Lightbulb className="w-5 h-5 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -248,7 +248,7 @@ export default function HomePage() {
             </div>
             
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl bg-heliaxis-navy/5 overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] bg-heliaxis-navy/5 overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=600&fit=crop"
                   alt="Solar panels on a residential home roof"
@@ -256,7 +256,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-xl max-w-xs hidden md:block">
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-[10px] p-6 shadow-xl max-w-xs hidden md:block">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold flex items-center justify-center">
                     <TrendingDown className="w-6 h-6 text-heliaxis-navy" />
@@ -277,7 +277,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
-              <div className="aspect-[4/3] rounded-2xl bg-heliaxis-navy/5 overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] bg-heliaxis-navy/5 overflow-hidden relative">
             <Image
                   src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&h=600&fit=crop"
                   alt="Commercial building with solar installation"
@@ -285,7 +285,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-heliaxis-navy rounded-xl p-6 shadow-xl max-w-xs hidden md:block">
+              <div className="absolute -bottom-6 -right-6 bg-heliaxis-navy rounded-[10px] p-6 shadow-xl max-w-xs hidden md:block">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold flex items-center justify-center">
                     <Leaf className="w-6 h-6 text-heliaxis-navy" />
@@ -312,19 +312,19 @@ export default function HomePage() {
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[10px]">
                   <Building2 className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">SMEs & Large Businesses</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[10px]">
                   <Building className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Local Authorities</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[10px]">
                   <Users className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Housing Associations</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[10px]">
                   <Home className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-heliaxis-navy font-medium">Education Providers</span>
                 </div>
@@ -361,7 +361,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors group">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
                   <Sun className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-white">Solar PV</CardTitle>
@@ -376,7 +376,7 @@ export default function HomePage() {
 
             <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors group">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
                   <Battery className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-white">Battery Storage</CardTitle>
@@ -391,7 +391,7 @@ export default function HomePage() {
 
             <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors group">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
                   <Thermometer className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-white">Infrared Heating</CardTitle>
@@ -406,7 +406,7 @@ export default function HomePage() {
 
             <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors group">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4 group-hover:bg-heliaxis-gold/30 transition-colors">
                   <Lightbulb className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-white">LED Lighting</CardTitle>
@@ -437,7 +437,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[16/10] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[16/10] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=500&fit=crop"
                   alt="Engineers discussing solar panel installation plans"
@@ -445,7 +445,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-xl bg-heliaxis-gold flex items-center justify-center hidden md:flex">
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-[10px] bg-heliaxis-gold flex items-center justify-center hidden md:flex">
                 <CheckCircle2 className="w-12 h-12 text-heliaxis-navy" />
               </div>
             </div>
@@ -453,7 +453,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="relative group">
-              <div className="aspect-[4/3] rounded-xl overflow-hidden mb-4 relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden mb-4 relative">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
                   alt="Professional consultation meeting"
@@ -473,7 +473,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative group">
-              <div className="aspect-[4/3] rounded-xl overflow-hidden mb-4 relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden mb-4 relative">
                 <Image
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop"
                   alt="Technical design and planning"
@@ -493,7 +493,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative group">
-              <div className="aspect-[4/3] rounded-xl overflow-hidden mb-4 relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden mb-4 relative">
                 <Image
                   src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop"
                   alt="Professional solar panel installation"
@@ -513,7 +513,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative group">
-              <div className="aspect-[4/3] rounded-xl overflow-hidden mb-4 relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden mb-4 relative">
                 <Image
                   src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop"
                   alt="Ongoing support and monitoring"
@@ -581,7 +581,7 @@ export default function HomePage() {
             
             <div className="space-y-6">
               {/* Feature Image */}
-              <div className="aspect-[16/9] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=450&fit=crop"
                   alt="Smart energy meter and monitoring"
@@ -594,7 +594,7 @@ export default function HomePage() {
               <div className="grid sm:grid-cols-2 gap-4">
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <FileCheck className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">FIT Upgrades</CardTitle>
@@ -609,7 +609,7 @@ export default function HomePage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Zap className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">SEG Guidance</CardTitle>
@@ -624,7 +624,7 @@ export default function HomePage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Building className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">LA Funding</CardTitle>
@@ -639,7 +639,7 @@ export default function HomePage() {
 
               <Card className="border-none shadow-lg">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Clock className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-lg text-heliaxis-navy">Finance Options</CardTitle>
@@ -662,7 +662,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop"
                   alt="Professional team working on renewable energy project"
@@ -670,7 +670,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-heliaxis-gold rounded-xl p-6 shadow-xl max-w-[200px] hidden md:block">
+              <div className="absolute -bottom-6 -right-6 bg-heliaxis-gold rounded-[10px] p-6 shadow-xl max-w-[200px] hidden md:block">
                 <div className="text-heliaxis-navy">
                   <div className="text-3xl font-bold">10+</div>
                   <div className="text-sm">Years of combined experience</div>
@@ -689,7 +689,7 @@ export default function HomePage() {
               </p>
               
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-heliaxis-gold/5 transition-colors">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px] hover:bg-heliaxis-gold/5 transition-colors">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Shield className="w-6 h-6 text-heliaxis-gold" />
                   </div>
@@ -702,7 +702,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-heliaxis-gold/5 transition-colors">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px] hover:bg-heliaxis-gold/5 transition-colors">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Users className="w-6 h-6 text-heliaxis-gold" />
                   </div>
@@ -715,7 +715,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-heliaxis-gold/5 transition-colors">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px] hover:bg-heliaxis-gold/5 transition-colors">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6 text-heliaxis-gold" />
                   </div>
@@ -747,8 +747,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=225&fit=crop"
                   alt="Residential solar installation"
@@ -762,8 +762,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=225&fit=crop"
                   alt="Commercial building"
@@ -777,8 +777,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=225&fit=crop"
                   alt="School building"
@@ -792,8 +792,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=225&fit=crop"
                   alt="Housing estate"
@@ -807,8 +807,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=400&h=225&fit=crop"
                   alt="Local authority building"
@@ -822,8 +822,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow group">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden relative mb-4">
+            <div className="bg-white rounded-[10px] p-6 shadow-lg hover:shadow-xl transition-shadow group">
+              <div className="aspect-[16/9] rounded-[10px] overflow-hidden relative mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=225&fit=crop"
                   alt="Industrial facility"
@@ -838,7 +838,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="bg-heliaxis-navy rounded-2xl p-8 md:p-12">
+          <div className="bg-heliaxis-navy rounded-[10px] p-8 md:p-12">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl md:text-5xl font-bold text-heliaxis-gold mb-2">10+</div>

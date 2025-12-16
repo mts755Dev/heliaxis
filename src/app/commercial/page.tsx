@@ -97,7 +97,7 @@ export default function CommercialPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <TrendingDown className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Reduced Price Exposure</CardTitle>
@@ -112,7 +112,7 @@ export default function CommercialPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Shield className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">Enhanced Resilience</CardTitle>
@@ -126,7 +126,7 @@ export default function CommercialPage() {
 
             <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                   <Leaf className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-xl text-heliaxis-navy">ESG & Net Zero</CardTitle>
@@ -157,7 +157,7 @@ export default function CommercialPage() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[16/10] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[16/10] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop"
                   alt="Commercial building and industrial facility"
@@ -169,8 +169,8 @@ export default function CommercialPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <Building2 className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -179,8 +179,8 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <Factory className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -189,8 +189,8 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <Warehouse className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -199,8 +199,8 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <GraduationCap className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -209,8 +209,8 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <Building className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -219,8 +219,8 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[10px] shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                 <Users className="w-6 h-6 text-heliaxis-gold" />
               </div>
               <div>
@@ -278,7 +278,7 @@ export default function CommercialPage() {
                 </div>
               </div>
 
-              <div className="bg-heliaxis-navy/5 rounded-xl p-6">
+              <div className="bg-heliaxis-navy/5 rounded-[10px] p-6">
                 <h4 className="font-semibold text-heliaxis-navy mb-3">Commercial benefits:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -298,7 +298,7 @@ export default function CommercialPage() {
             </div>
             
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&h=600&fit=crop"
                   alt="Commercial building with solar installation"
@@ -316,7 +316,7 @@ export default function CommercialPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=800&h=600&fit=crop"
                   alt="Commercial battery storage system"
@@ -344,21 +344,21 @@ export default function CommercialPage() {
               <div className="space-y-4 mb-8">
                 <h4 className="font-semibold text-white">Strategic use cases:</h4>
                 <div className="grid gap-3">
-                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-[10px]">
                     <Zap className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                     <div>
                       <h5 className="font-medium text-white">Peak Shaving</h5>
                       <p className="text-sm text-white/70">Manage demand-related costs effectively</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-[10px]">
                     <Clock className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                     <div>
                       <h5 className="font-medium text-white">Load Shifting</h5>
                       <p className="text-sm text-white/70">Optimise energy usage patterns throughout the day</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-lg">
+                  <div className="flex items-start gap-3 p-4 bg-white/5 rounded-[10px]">
                     <Shield className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                     <div>
                       <h5 className="font-medium text-white">Improved Resilience</h5>
@@ -470,7 +470,7 @@ export default function CommercialPage() {
                 requirements that come with public sector delivery.
               </p>
               
-              <div className="bg-white rounded-xl p-6 shadow-lg mb-8">
+              <div className="bg-white rounded-[10px] p-6 shadow-lg mb-8">
                 <h4 className="font-semibold text-heliaxis-navy mb-4">We support public sector clients with:</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-gray-600">
@@ -500,7 +500,7 @@ export default function CommercialPage() {
             <div>
               <Card className="border-none shadow-xl mb-6">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mb-4">
                     <Users className="w-7 h-7 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-xl text-heliaxis-navy">Housing Associations</CardTitle>
@@ -515,7 +515,7 @@ export default function CommercialPage() {
                 </CardContent>
               </Card>
 
-              <div className="bg-heliaxis-navy rounded-xl p-6 text-white">
+              <div className="bg-heliaxis-navy rounded-[10px] p-6 text-white">
                 <h4 className="font-semibold mb-4">Typical housing association challenges:</h4>
                 <ul className="space-y-2 text-white/80">
                   <li className="flex items-center gap-2">
@@ -557,7 +557,7 @@ export default function CommercialPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="text-center p-6 rounded-xl bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
+            <div className="text-center p-6 rounded-[10px] bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
               <div className="w-14 h-14 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                 <Settings className="w-7 h-7 text-heliaxis-gold" />
               </div>
@@ -565,7 +565,7 @@ export default function CommercialPage() {
               <p className="text-sm text-gray-600">Evidence-based approach to every project</p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
+            <div className="text-center p-6 rounded-[10px] bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
               <div className="w-14 h-14 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                 <FileCheck className="w-7 h-7 text-heliaxis-gold" />
               </div>
@@ -573,7 +573,7 @@ export default function CommercialPage() {
               <p className="text-sm text-gray-600">Comprehensive communication at every stage</p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
+            <div className="text-center p-6 rounded-[10px] bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
               <div className="w-14 h-14 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                 <Award className="w-7 h-7 text-heliaxis-gold" />
               </div>
@@ -581,7 +581,7 @@ export default function CommercialPage() {
               <p className="text-sm text-gray-600">Commercial and funded project track record</p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
+            <div className="text-center p-6 rounded-[10px] bg-gray-50 hover:bg-heliaxis-gold/5 transition-colors">
               <div className="w-14 h-14 rounded-full bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-7 h-7 text-heliaxis-gold" />
               </div>
@@ -603,7 +603,7 @@ export default function CommercialPage() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-white rounded-lg px-6 border-none shadow-sm">
+              <AccordionItem value="item-1" className="bg-white rounded-[10px] px-6 border-none shadow-sm">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   What return on investment can we expect from commercial solar?
                 </AccordionTrigger>
@@ -615,7 +615,7 @@ export default function CommercialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-white rounded-lg px-6 border-none shadow-sm">
+              <AccordionItem value="item-2" className="bg-white rounded-[10px] px-6 border-none shadow-sm">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you support multi-site organisations?
                 </AccordionTrigger>
@@ -626,7 +626,7 @@ export default function CommercialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-white rounded-lg px-6 border-none shadow-sm">
+              <AccordionItem value="item-3" className="bg-white rounded-[10px] px-6 border-none shadow-sm">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can you work within procurement frameworks?
                 </AccordionTrigger>
@@ -637,7 +637,7 @@ export default function CommercialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-white rounded-lg px-6 border-none shadow-sm">
+              <AccordionItem value="item-4" className="bg-white rounded-[10px] px-6 border-none shadow-sm">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do you offer consultancy without installation?
                 </AccordionTrigger>
@@ -648,7 +648,7 @@ export default function CommercialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="bg-white rounded-lg px-6 border-none shadow-sm">
+              <AccordionItem value="item-5" className="bg-white rounded-[10px] px-6 border-none shadow-sm">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can you support carbon reporting?
                 </AccordionTrigger>

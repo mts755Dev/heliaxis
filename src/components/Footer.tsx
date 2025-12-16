@@ -31,16 +31,18 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center mb-6">
-              <Image
-                src="/assets/heliaxis-logo.png"
-                alt="Heliaxis"
-                width={180}
-                height={50}
-                className="h-12 w-auto brightness-0 invert"
-              />
+              <div className="p-2 rounded-[10px] border-2 border-heliaxis-gold">
+                <Image
+                  src="/assets/heliaxis-logo.png"
+                  alt="Heliaxis"
+                  width={180}
+                  height={50}
+                  className="h-10 w-auto brightness-0 invert"
+                />
+              </div>
             </Link>
             <p className="text-white/70 leading-relaxed mb-6">
-              Energy that revolves around you. Delivering renewable energy solutions for homes, businesses and public sector organisations across Wales and the South West of England.
+              Energy That Revolves Around You. Delivering renewable energy solutions for homes, businesses and public sector organisations across Wales and the South West of England.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -107,20 +109,20 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:info@heliaxis.co.uk"
+                  href="mailto:hello@heliaxis.co.uk"
                   className="flex items-center gap-3 text-white/70 hover:text-heliaxis-gold transition-colors"
                 >
                   <Mail className="w-5 h-5 text-heliaxis-gold" />
-                  info@heliaxis.co.uk
+                  hello@heliaxis.co.uk
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+441onal"
+                  href="tel:+441633965205"
                   className="flex items-center gap-3 text-white/70 hover:text-heliaxis-gold transition-colors"
                 >
                   <Phone className="w-5 h-5 text-heliaxis-gold" />
-                  Contact for Quote
+                  +44 1633 965205
                 </a>
               </li>
               <li>

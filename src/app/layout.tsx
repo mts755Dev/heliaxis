@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Heliaxis",
     title: "Heliaxis | Renewable Energy Solutions Wales & South West England",
     description:
-      "Energy that revolves around you. Delivering renewable energy solutions for homes, businesses and public sector organisations across Wales and the South West of England.",
+      "Energy That Revolves Around You. Delivering renewable energy solutions for homes, businesses and public sector organisations across Wales and the South West of England.",
     images: [
       {
         url: "/og-image.jpg",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Heliaxis | Renewable Energy Solutions",
     description:
-      "Energy that revolves around you. Delivering renewable energy solutions for homes, businesses and public sector organisations.",
+      "Energy That Revolves Around You. Delivering renewable energy solutions for homes, businesses and public sector organisations.",
     images: ["/og-image.jpg"],
   },
   robots: {

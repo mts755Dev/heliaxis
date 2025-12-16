@@ -99,19 +99,19 @@ export default function ResidentialPage() {
               </p>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-lg border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
                   <Clock className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">When you use electricity during the day</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-lg border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
                   <Gauge className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">How much electricity you consume overall</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-lg border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
                   <Thermometer className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">How heating and hot water are currently provided</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-lg border-l-4 border-heliaxis-gold">
+                <div className="flex items-center gap-3 p-4 bg-heliaxis-gold/5 rounded-[10px] border-l-4 border-heliaxis-gold">
                   <Settings className="w-5 h-5 text-heliaxis-gold flex-shrink-0" />
                   <span className="text-heliaxis-navy">Future plans such as electric vehicles or home offices</span>
                 </div>
@@ -119,7 +119,7 @@ export default function ResidentialPage() {
             </div>
             
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-heliaxis-navy/5 overflow-hidden relative">
+              <div className="aspect-square rounded-[10px] bg-heliaxis-navy/5 overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop"
                   alt="Modern home with energy efficient features"
@@ -137,7 +137,7 @@ export default function ResidentialPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=600&fit=crop"
                   alt="Solar panels on residential roof"
@@ -145,7 +145,7 @@ export default function ResidentialPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-xl max-w-xs hidden md:block">
+              <div className="absolute -bottom-6 -right-6 bg-white rounded-[10px] p-6 shadow-xl max-w-xs hidden md:block">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-heliaxis-gold flex items-center justify-center">
                     <TrendingDown className="w-6 h-6 text-heliaxis-navy" />
@@ -197,7 +197,7 @@ export default function ResidentialPage() {
                 </div>
               </div>
 
-              <div className="bg-heliaxis-navy/5 rounded-xl p-6">
+              <div className="bg-heliaxis-navy/5 rounded-[10px] p-6">
                 <h4 className="font-semibold text-heliaxis-navy mb-3">At handover, you will receive:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
@@ -244,21 +244,21 @@ export default function ResidentialPage() {
               </p>
               
               <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px]">
                   <Zap className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-heliaxis-navy">Use more solar energy</h4>
                     <p className="text-sm text-gray-600">Increase self-consumption significantly</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px]">
                   <TrendingDown className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-heliaxis-navy">Reduce grid imports</h4>
                     <p className="text-sm text-gray-600">Cut peak period electricity purchases</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-[10px]">
                   <Clock className="w-5 h-5 text-heliaxis-gold mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-heliaxis-navy">Future-proof flexibility</h4>
@@ -267,7 +267,7 @@ export default function ResidentialPage() {
                 </div>
               </div>
 
-              <div className="bg-heliaxis-navy text-white rounded-xl p-6">
+              <div className="bg-heliaxis-navy text-white rounded-[10px] p-6">
                 <h4 className="font-semibold mb-2">Retrofitting to existing systems</h4>
                 <p className="text-white/80 text-sm">
                   In many cases, battery storage can be added to an existing solar PV system. If your 
@@ -279,7 +279,7 @@ export default function ResidentialPage() {
             </div>
             
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=800&h=600&fit=crop"
                   alt="Home battery storage system"
@@ -314,7 +314,7 @@ export default function ResidentialPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Home className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Retrofit Properties</CardTitle>
@@ -328,7 +328,7 @@ export default function ResidentialPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Settings className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Zoned Control</CardTitle>
@@ -342,7 +342,7 @@ export default function ResidentialPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Individual Rooms</CardTitle>
@@ -356,7 +356,7 @@ export default function ResidentialPage() {
 
             <Card className="border-none shadow-lg text-center">
               <CardHeader>
-                <div className="w-14 h-14 rounded-xl bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-7 h-7 text-heliaxis-gold" />
                 </div>
                 <CardTitle className="text-lg text-heliaxis-navy">Honest Advice</CardTitle>
@@ -376,7 +376,7 @@ export default function ResidentialPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl bg-heliaxis-navy/5 overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[10px] bg-heliaxis-navy/5 overflow-hidden relative">
                 <Image
                   src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=800&h=600&fit=crop"
                   alt="Modern LED lighting in home"
@@ -459,19 +459,19 @@ export default function ResidentialPage() {
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px]">
                   <PoundSterling className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-white">Spread costs over time</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px]">
                   <TrendingDown className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-white">Immediate bill savings</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px]">
                   <Clock className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-white">No need to delay</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px]">
                   <FileCheck className="w-5 h-5 text-heliaxis-gold" />
                   <span className="text-white">Clear documentation</span>
                 </div>
@@ -481,7 +481,7 @@ export default function ResidentialPage() {
             <div className="grid gap-6">
               <Card className="bg-white/5 border-white/10">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/20 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4">
                     <FileCheck className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-xl text-white">Feed-in Tariff Systems</CardTitle>
@@ -498,7 +498,7 @@ export default function ResidentialPage() {
 
               <Card className="bg-white/5 border-white/10">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/20 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/20 flex items-center justify-center mb-4">
                     <Zap className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <CardTitle className="text-xl text-white">Smart Export Guarantee</CardTitle>
@@ -634,7 +634,7 @@ export default function ResidentialPage() {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="bg-gray-50 rounded-lg px-6 border-none">
+              <AccordionItem value="item-1" className="bg-gray-50 rounded-[10px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Are solar panels worth it in Wales?
                 </AccordionTrigger>
@@ -645,7 +645,7 @@ export default function ResidentialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="bg-gray-50 rounded-lg px-6 border-none">
+              <AccordionItem value="item-2" className="bg-gray-50 rounded-[10px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Can I add a battery to my existing solar system?
                 </AccordionTrigger>
@@ -656,7 +656,7 @@ export default function ResidentialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="bg-gray-50 rounded-lg px-6 border-none">
+              <AccordionItem value="item-3" className="bg-gray-50 rounded-[10px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do solar panels work in winter?
                 </AccordionTrigger>
@@ -667,7 +667,7 @@ export default function ResidentialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="bg-gray-50 rounded-lg px-6 border-none">
+              <AccordionItem value="item-4" className="bg-gray-50 rounded-[10px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Do I need a smart meter?
                 </AccordionTrigger>
@@ -678,7 +678,7 @@ export default function ResidentialPage() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="bg-gray-50 rounded-lg px-6 border-none">
+              <AccordionItem value="item-5" className="bg-gray-50 rounded-[10px] px-6 border-none">
                 <AccordionTrigger className="text-left text-heliaxis-navy font-medium hover:no-underline">
                   Will renewable energy increase my home&apos;s value?
                 </AccordionTrigger>

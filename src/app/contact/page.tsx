@@ -80,7 +80,7 @@ export default function ContactPage() {
                       id="firstName"
                       name="firstName"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
                       placeholder="Your first name"
                     />
                   </div>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                       id="lastName"
                       name="lastName"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
                       placeholder="Your last name"
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                     id="enquiryType"
                     name="enquiryType"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors bg-white"
+                    className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors bg-white"
                   >
                     <option value="">Select an option</option>
                     <option value="residential">Residential - Home Solar & Battery</option>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                     name="message"
                     rows={5}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-[10px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors resize-none"
                     placeholder="Please describe your project, goals, or any questions you have..."
                   />
                 </div>
@@ -195,32 +195,37 @@ export default function ContactPage() {
 
               <div className="space-y-6 mb-12">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-heliaxis-navy">Email</h3>
                     <a 
-                      href="mailto:info@heliaxis.co.uk" 
+                      href="mailto:hello@heliaxis.co.uk" 
                       className="text-gray-600 hover:text-heliaxis-gold transition-colors"
                     >
-                      info@heliaxis.co.uk
+                      hello@heliaxis.co.uk
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-heliaxis-navy">Phone</h3>
-                    <p className="text-gray-600">Contact us for a quote</p>
+                    <a 
+                      href="tel:+441633965205" 
+                      className="text-gray-600 hover:text-heliaxis-gold transition-colors"
+                    >
+                      +44 1633 965205
+                    </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -230,7 +235,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-[10px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-heliaxis-gold" />
                   </div>
                   <div>
@@ -241,33 +246,33 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Links */}
-              <div className="bg-heliaxis-navy rounded-xl p-8 text-white">
+              <div className="bg-heliaxis-navy rounded-[10px] p-8 text-white">
                 <h3 className="text-xl font-bold mb-6">Explore our services</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <Link 
                     href="/residential" 
-                    className="flex items-center gap-3 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px] hover:bg-white/10 transition-colors"
                   >
                     <Home className="w-5 h-5 text-heliaxis-gold" />
                     <span>Residential</span>
                   </Link>
                   <Link 
                     href="/commercial" 
-                    className="flex items-center gap-3 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px] hover:bg-white/10 transition-colors"
                   >
                     <Building2 className="w-5 h-5 text-heliaxis-gold" />
                     <span>Commercial</span>
                   </Link>
                   <Link 
                     href="/consultation" 
-                    className="flex items-center gap-3 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px] hover:bg-white/10 transition-colors"
                   >
                     <Users className="w-5 h-5 text-heliaxis-gold" />
                     <span>Consultation</span>
                   </Link>
                   <Link 
                     href="/funding" 
-                    className="flex items-center gap-3 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                    className="flex items-center gap-3 p-4 bg-white/5 rounded-[10px] hover:bg-white/10 transition-colors"
                   >
                     <FileText className="w-5 h-5 text-heliaxis-gold" />
                     <span>Funding</span>
