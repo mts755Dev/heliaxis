@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactSection } from "@/components/ContactSection";
 import {
   Accordion,
   AccordionContent,
@@ -602,6 +603,9 @@ export default function SEGPage() {
         </div>
       </section>
 
+      {/* Contact Form Section */}
+      <ContactSection />
+
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-heliaxis-navy relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -634,7 +638,7 @@ export default function SEGPage() {
                 size="lg" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-heliaxis-navy h-14 text-lg font-semibold px-8 transition-colors"
               >
-                <Link href="/residential">Residential Solutions</Link>
+                <Link href="/residential">Solar for your Home</Link>
               </Button>
             </div>
           </div>

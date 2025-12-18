@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { 
-  Mail, Phone, MapPin, Clock, ArrowRight,
+  Mail, Phone, MapPin, Clock,
   Home, Building2, Users, FileText
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Heliaxis | Get a Free Quote",
@@ -61,127 +61,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-heliaxis-navy mb-6">
-                Request a consultation
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Fill out the form below and we&apos;ll be in touch to discuss your project, 
-                answer your questions, or arrange a site assessment.
-              </p>
-              
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                      className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
-                      placeholder="Your first name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      required
-                      className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
-                      placeholder="Your last name"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors"
-                    placeholder="Your phone number"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="enquiryType" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                    Enquiry Type *
-                  </label>
-                  <select
-                    id="enquiryType"
-                    name="enquiryType"
-                    required
-                    className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors bg-white"
-                  >
-                    <option value="">Select an option</option>
-                    <option value="residential">Residential - Home Solar & Battery</option>
-                    <option value="commercial">Commercial - Business Energy Solutions</option>
-                    <option value="public-sector">Public Sector - Local Authority / Housing Association</option>
-                    <option value="consultation">Consultation & Advisory Services</option>
-                    <option value="funding">Funding & Support Enquiry</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-heliaxis-navy mb-2">
-                    Tell us about your project *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full px-4 py-3 rounded-[5px] border border-gray-200 focus:border-heliaxis-gold focus:ring-2 focus:ring-heliaxis-gold/20 outline-none transition-colors resize-none"
-                    placeholder="Please describe your project, goals, or any questions you have..."
-                  />
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    name="consent"
-                    required
-                    className="mt-1 w-4 h-4 rounded border-gray-300 text-heliaxis-gold focus:ring-heliaxis-gold"
-                  />
-                  <label htmlFor="consent" className="text-sm text-gray-600">
-                    I consent to Heliaxis storing my details and contacting me about my enquiry.
-                  </label>
-                </div>
-
-                <Button 
-                  type="submit"
-                  size="lg" 
-                  className="w-full bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold h-14 text-lg"
-                >
-                  Send Enquiry
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Contact Information */}

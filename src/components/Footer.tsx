@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const solutionLinks = [
-  { name: "Residential Solutions", href: "/residential" },
+  { name: "Solar for your Home", href: "/residential" },
   { name: "Commercial & Public Sector", href: "/commercial" },
   { name: "Consultation & Advisory", href: "/consultation" },
 ];
@@ -137,9 +137,12 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="flex justify-center items-center">
+          <div className="flex flex-col items-center gap-2 text-center">
             <p className="text-white/60 text-sm">
               © {new Date().getFullYear()} Heliaxis. All rights reserved.
+            </p>
+            <p className="text-white/60 text-sm">
+              Company Number 16734783 Registered in England & Wales | VAT GB507431316
             </p>
           </div>
         </div>

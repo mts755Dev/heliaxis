@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 
 const solutions = [
   {
-    title: "Residential Solutions",
+    title: "Solar for your Home",
     href: "/residential",
     description: "Solar PV, battery storage, and energy solutions for homeowners.",
   },
@@ -50,9 +50,24 @@ const resources = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-heliaxis-navy/10 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className={cn(
+      "fixed top-0 z-50 w-full transition-all duration-300",
+      isScrolled 
+        ? "border-b border-heliaxis-navy/10 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm" 
+        : "border-b border-white/10 bg-transparent"
+    )}>
       <nav className="container mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -61,7 +76,10 @@ export function Navigation() {
             alt="Heliaxis"
             width={180}
             height={50}
-            className="h-12 w-auto"
+            className={cn(
+              "h-12 w-auto transition-all duration-300",
+              isScrolled ? "" : "brightness-0 invert"
+            )}
             priority
           />
         </Link>
@@ -71,13 +89,20 @@ export function Navigation() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild className={cn(
+                  navigationMenuTriggerStyle(), 
+                  "bg-transparent hover:bg-heliaxis-gold/30 focus:bg-heliaxis-gold/30 hover:text-heliaxis-navy text-base font-medium rounded-[5px] transition-all",
+                  isScrolled ? "text-heliaxis-navy" : "text-white"
+                )}>
                   <Link href="/">Home</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger className={cn(
+                  "bg-transparent hover:bg-heliaxis-gold/30 focus:bg-heliaxis-gold/30 data-[state=open]:bg-heliaxis-gold/30 text-base font-medium rounded-[5px] transition-all",
+                  isScrolled ? "text-heliaxis-navy" : "text-white"
+                )}>Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                     {solutions.map((item) => (
@@ -94,7 +119,10 @@ export function Navigation() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger className={cn(
+                  "bg-transparent hover:bg-heliaxis-gold/30 focus:bg-heliaxis-gold/30 data-[state=open]:bg-heliaxis-gold/30 text-base font-medium rounded-[5px] transition-all",
+                  isScrolled ? "text-heliaxis-navy" : "text-white"
+                )}>Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                     {resources.map((item) => (
@@ -111,7 +139,11 @@ export function Navigation() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild className={cn(
+                  navigationMenuTriggerStyle(), 
+                  "bg-transparent hover:bg-heliaxis-gold/30 focus:bg-heliaxis-gold/30 hover:text-heliaxis-navy text-base font-medium rounded-[5px] transition-all",
+                  isScrolled ? "text-heliaxis-navy" : "text-white"
+                )}>
                   <Link href="/about">About</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -121,9 +153,18 @@ export function Navigation() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
+          <Link 
+            href="/contact"
+            className={cn(
+              "px-4 py-2 bg-transparent hover:bg-heliaxis-gold/30 focus:bg-heliaxis-gold/30 hover:text-heliaxis-navy text-base font-medium rounded-[5px] transition-all",
+              isScrolled ? "text-heliaxis-navy" : "text-white"
+            )}
+          >
+            Contact Us
+          </Link>
           <Button 
             asChild 
-            className="bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold px-6"
+            className="bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold px-6 rounded-[5px]"
           >
             <Link href="/contact">Get a Quote</Link>
           </Button>
@@ -132,7 +173,10 @@ export function Navigation() {
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="lg:hidden">
-            <Button variant="ghost" size="icon" className="text-heliaxis-navy">
+            <Button variant="ghost" size="icon" className={cn(
+              "transition-colors",
+              isScrolled ? "text-heliaxis-navy" : "text-white"
+            )}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </Button>
@@ -142,10 +186,10 @@ export function Navigation() {
             <SheetDescription className="sr-only">
               Navigate through Heliaxis website pages
             </SheetDescription>
-            <div className="flex flex-col gap-6 mt-8">
+            <div className="flex flex-col gap-6 mt-8 px-4">
               <Link 
                 href="/" 
-                className="text-lg font-medium text-heliaxis-navy hover:text-heliaxis-gold transition-colors"
+                className="text-lg font-medium text-heliaxis-navy hover:bg-heliaxis-gold/30 hover:text-heliaxis-navy transition-colors p-2 rounded-[5px]"
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -159,7 +203,7 @@ export function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block text-lg font-medium text-heliaxis-navy hover:text-heliaxis-gold transition-colors pl-4 border-l-2 border-heliaxis-gold/30 hover:border-heliaxis-gold"
+                    className="block text-lg font-medium text-heliaxis-navy hover:bg-heliaxis-gold/30 hover:text-heliaxis-navy transition-colors pl-4 border-l-2 border-heliaxis-gold/30 hover:border-heliaxis-gold p-2 rounded-[5px]"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.title}
@@ -175,7 +219,7 @@ export function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block text-lg font-medium text-heliaxis-navy hover:text-heliaxis-gold transition-colors pl-4 border-l-2 border-heliaxis-gold/30 hover:border-heliaxis-gold"
+                    className="block text-lg font-medium text-heliaxis-navy hover:bg-heliaxis-gold/30 hover:text-heliaxis-navy transition-colors pl-4 border-l-2 border-heliaxis-gold/30 hover:border-heliaxis-gold p-2 rounded-[5px]"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.title}
@@ -185,19 +229,28 @@ export function Navigation() {
 
               <Link 
                 href="/about" 
-                className="text-lg font-medium text-heliaxis-navy hover:text-heliaxis-gold transition-colors"
+                className="text-lg font-medium text-heliaxis-navy hover:bg-heliaxis-gold/30 hover:text-heliaxis-navy transition-colors p-2 rounded-[5px]"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
 
-              <div className="pt-6 border-t border-heliaxis-navy/10">
+              <div className="pt-6 border-t border-heliaxis-navy/10 space-y-3">
                 <Button 
                   asChild 
-                  className="w-full bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold"
+                  className="w-full bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold rounded-[5px]"
                 >
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
                     Get a Quote
+                  </Link>
+                </Button>
+                <Button 
+                  asChild 
+                  variant="outline"
+                  className="w-full border-heliaxis-navy text-heliaxis-navy hover:bg-heliaxis-navy/5 rounded-[5px]"
+                >
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
+                    Contact Us
                   </Link>
                 </Button>
               </div>
@@ -219,13 +272,13 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-heliaxis-gold/10 hover:text-heliaxis-navy focus:bg-heliaxis-gold/10 focus:text-heliaxis-navy",
+            "block select-none space-y-1 rounded-[5px] p-3 leading-none no-underline outline-none transition-colors hover:bg-heliaxis-gold/30 hover:text-heliaxis-navy focus:bg-heliaxis-gold/30 focus:text-heliaxis-navy",
             className
           )}
           {...props}
         >
           <div className="text-sm font-semibold leading-none text-heliaxis-navy">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-heliaxis-navy/70 mt-1.5">
+          <p className="text-sm leading-snug text-heliaxis-navy/70 mt-1.5">
             {children}
           </p>
         </a>

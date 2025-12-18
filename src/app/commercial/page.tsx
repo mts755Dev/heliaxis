@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactSection } from "@/components/ContactSection";
 import {
   Accordion,
   AccordionContent,
@@ -169,63 +170,63 @@ export default function CommercialPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <Building2 className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <Building2 className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">SMEs & Large Businesses</h3>
-                <p className="text-sm text-gray-600">Commercial organisations of all sizes</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Commercial organisations of all sizes</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <Factory className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <Factory className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">Industrial Sites</h3>
-                <p className="text-sm text-gray-600">Manufacturing and processing facilities</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Manufacturing and processing facilities</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <Warehouse className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <Warehouse className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">Warehousing & Logistics</h3>
-                <p className="text-sm text-gray-600">Distribution and storage operations</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Distribution and storage operations</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <GraduationCap className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">Education Providers</h3>
-                <p className="text-sm text-gray-600">Schools, colleges and education estates</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Schools, colleges and education estates</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <Building className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <Building className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">Local Authorities</h3>
-                <p className="text-sm text-gray-600">Public sector bodies and councils</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Public sector bodies and councils</p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 flex items-center justify-center flex-shrink-0">
-                <Users className="w-6 h-6 text-heliaxis-gold" />
+            <div className="flex items-center gap-4 p-6 bg-white rounded-[5px] shadow-sm hover:shadow-xl hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+              <div className="w-12 h-12 rounded-[5px] bg-heliaxis-gold/10 group-hover:bg-heliaxis-navy/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                <Users className="w-6 h-6 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-heliaxis-navy">Housing Associations</h3>
-                <p className="text-sm text-gray-600">Registered social landlords</p>
+                <p className="text-sm text-gray-600 group-hover:text-heliaxis-navy/80 transition-colors">Registered social landlords</p>
               </div>
             </div>
           </div>
@@ -662,6 +663,9 @@ export default function CommercialPage() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactSection />
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-heliaxis-navy relative overflow-hidden">

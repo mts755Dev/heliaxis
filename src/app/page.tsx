@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactSection } from "@/components/ContactSection";
 
 export const metadata: Metadata = {
   title: "Heliaxis | Renewable Energy Solutions Wales & South West England",
@@ -20,7 +21,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-screen flex items-center pt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
         <Image
@@ -51,7 +52,7 @@ export default function HomePage() {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold px-8 h-14 text-lg"
+                className="bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold px-8 h-14 text-lg rounded-[5px]"
               >
                 <Link href="/contact">
                   Get Your Free Quote
@@ -61,7 +62,7 @@ export default function HomePage() {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-heliaxis-navy h-14 text-lg font-semibold px-8 transition-colors"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-heliaxis-navy h-14 text-lg font-semibold px-8 transition-colors rounded-[5px]"
               >
                 <Link href="/residential">Explore Solutions</Link>
               </Button>
@@ -241,7 +242,7 @@ export default function HomePage() {
                 className="bg-heliaxis-navy hover:bg-heliaxis-navy/90 text-white"
               >
                 <Link href="/residential">
-                  Explore Residential Solutions
+                  Explore Solar for your Home
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -312,20 +313,20 @@ export default function HomePage() {
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px]">
-                  <Building2 className="w-5 h-5 text-heliaxis-gold" />
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px] hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  <Building2 className="w-5 h-5 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
                   <span className="text-heliaxis-navy font-medium">SMEs & Large Businesses</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px]">
-                  <Building className="w-5 h-5 text-heliaxis-gold" />
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px] hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  <Building className="w-5 h-5 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
                   <span className="text-heliaxis-navy font-medium">Local Authorities</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px]">
-                  <Users className="w-5 h-5 text-heliaxis-gold" />
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px] hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  <Users className="w-5 h-5 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
                   <span className="text-heliaxis-navy font-medium">Housing Associations</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px]">
-                  <Home className="w-5 h-5 text-heliaxis-gold" />
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-[5px] hover:bg-heliaxis-gold hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  <Home className="w-5 h-5 text-heliaxis-gold group-hover:text-heliaxis-navy transition-colors" />
                   <span className="text-heliaxis-navy font-medium">Education Providers</span>
                 </div>
               </div>
@@ -559,7 +560,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   asChild 
-                  className="bg-heliaxis-navy hover:bg-heliaxis-navy/90 text-white"
+                  className="bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold"
                 >
                   <Link href="/seg">
                     Learn About SEG
@@ -579,17 +580,7 @@ export default function HomePage() {
               </div>
             </div>
             
-            <div className="space-y-6">
-              {/* Feature Image */}
-              <div className="aspect-[16/9] rounded-[5px] overflow-hidden relative">
-                <Image
-                  src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=450&fit=crop"
-                  alt="Smart energy meter and monitoring"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-heliaxis-navy/20" />
-              </div>
+            <div>
               {/* Cards Grid */}
               <div className="grid sm:grid-cols-2 gap-4">
               <Card className="border-none shadow-lg">
@@ -860,6 +851,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactSection />
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-heliaxis-navy relative overflow-hidden">

@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ContactSection } from "@/components/ContactSection";
 import {
   Accordion,
   AccordionContent,
@@ -686,6 +687,9 @@ export default function ConsultationPage() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactSection />
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-heliaxis-navy relative overflow-hidden">
