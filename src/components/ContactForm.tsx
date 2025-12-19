@@ -34,6 +34,8 @@ export function ContactForm() {
   });
 
   const [submitted, setSubmitted] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [error, setError] = React.useState("");
 
   const toggleInterest = (id: string) => {
     setFormData((prev) => ({
@@ -44,25 +46,70 @@ export function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        organization: "",
-        email: "",
-        phone: "",
-        sector: "",
-        interests: [],
-        message: "",
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      // Get sector label
+      const sectorLabel = sectors.find(s => s.id === formData.sector)?.label || formData.sector;
+      
+      // Get interest labels
+      const interestLabels = formData.interests
+        .map(id => interests.find(i => i.id === id)?.label)
+        .filter(Boolean)
+        .join(", ");
+
+      // Prepare form data for Web3Forms
+      const web3FormData = {
+        access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+        name: formData.name,
+        email: formData.email,
+        organization: formData.organization || "Not provided",
+        phone: formData.phone || "Not provided",
+        sector: sectorLabel,
+        interests: interestLabels,
+        message: formData.message || "No additional message",
+        subject: `New enquiry from ${formData.name} - ${sectorLabel}`,
+      };
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(web3FormData),
       });
-    }, 3000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+        
+        // Reset form after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+          setFormData({
+            name: "",
+            organization: "",
+            email: "",
+            phone: "",
+            sector: "",
+            interests: [],
+            message: "",
+          });
+        }, 5000);
+      } else {
+        setError("Something went wrong. Please try again or contact us directly.");
+      }
+    } catch (err) {
+      setError("Failed to send message. Please try again or contact us directly.");
+      console.error("Form submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -225,12 +272,17 @@ export function ContactForm() {
 
           {/* Submit Button */}
           <div className="pt-4">
+            {error && (
+              <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-[5px] text-red-600 text-sm">
+                {error}
+              </div>
+            )}
             <Button
               type="submit"
-              disabled={!formData.name || !formData.email || !formData.sector || formData.interests.length === 0}
+              disabled={!formData.name || !formData.email || !formData.sector || formData.interests.length === 0 || isSubmitting}
               className="w-full bg-heliaxis-gold hover:bg-heliaxis-gold/90 text-heliaxis-navy font-semibold py-6 text-lg rounded-[5px] disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Enquiry
+              {isSubmitting ? "Sending..." : "Send Enquiry"}
             </Button>
             <p className="text-xs text-gray-500 text-center mt-3">
               By submitting this form, you agree to our privacy policy and terms of service.
