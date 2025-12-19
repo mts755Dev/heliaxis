@@ -185,9 +185,16 @@ export function ContactForm() {
                 id="phone"
                 type="tel"
                 value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/[^\d+\s]/g, '');
+                  if (value.length <= 15) {
+                    setFormData({ ...formData, phone: value });
+                  }
+                }}
+                pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$|^(\+44\s?[1-9]\d{1,4}|\(?0[1-9]\d{1,4}\)?)\s?\d{3,4}\s?\d{3,4}$"
+                maxLength={15}
                 className="w-full px-4 py-3 border border-gray-300 rounded-[5px] focus:outline-none focus:ring-2 focus:ring-heliaxis-gold focus:border-transparent"
-                placeholder="Your phone number"
+                placeholder="Enter phone"
               />
             </div>
           </div>
